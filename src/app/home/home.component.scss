@@ -1,7 +1,7 @@
 .container__main {
   display: flex;
   width: 100%;
-  height: 500px;
+  height: 563px;
 }
 
 .container__items {
@@ -98,7 +98,7 @@
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 900px) {
   .image__main {
     background: url("./../../assets/images/bg-intro-mobile.svg") no-repeat center;
     height: 325px;
@@ -109,7 +109,7 @@
   }
 
   .image__phone {
-    zoom: 43%;
+    zoom: 51%;
     background-position: 50% 187%;
   }
 
@@ -117,7 +117,7 @@
     margin: initial;
     text-align: center;
     width: 100%;
-    margin-top: 307px;
+    margin-top: 360px;
     align-items: center;
   }
 
@@ -136,6 +136,16 @@
     font-size: 16px;
     text-align: justify;
     color: #7a7575;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .label__main {
+    margin-top: 315px;
+  }
+
+  .image__phone {
+    zoom: 43%;
   }
 }
 
