@@ -1,0 +1,142 @@
+.container__main {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+.container__items {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.label__main {
+  display: flex;
+  flex-direction: column;
+  margin: 109px -440px 0px 7%;
+  text-align: left;
+  z-index: 1;
+  width: 327px;
+}
+
+.title__main {
+  font-size: 38px;
+  font-weight: bold;
+  position: relative;
+  width: 100%;
+}
+
+.description__main {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  font-size: 16px;
+  width: 100%;
+  color: hsl(0, 2%, 47%);
+}
+
+.image__phone {
+  background: url("./../../assets/images/image-mockups.png") no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  zoom: 80%;
+  background-position: 130% 85%;
+  z-index: 0;
+}
+
+.image__main {
+  background: url("./../../assets/images/bg-intro-desktop.svg") no-repeat right;
+  height: 720px;
+  width: 52%;
+  background-position: 11% 80%;
+  background-size: auto;
+  zoom: 80%;
+}
+
+.button__header {
+  display: flex;
+  border-radius: 25px;
+  height: 33px;
+  width: 110px;
+  align-items: center;
+  background: rgb(49, 211, 92);
+  background: linear-gradient(
+    90deg,
+    rgba(49, 211, 92, 1) 0%,
+    rgba(43, 183, 218, 1) 87%
+  );
+  border: 0;
+  padding: 15px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.span__header {
+  font-size: 12px;
+  color: white;
+}
+
+@media screen and (max-width: 1440px) {
+  .image__phone {
+    zoom: 82%;
+    background-position: 115% 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .image__phone {
+    background-position: 145% 80%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .image__main {
+    background: url("./../../assets/images/bg-intro-mobile.svg") no-repeat center;
+    height: 325px;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    zoom: 100%;
+  }
+
+  .image__phone {
+   zoom: 40%;
+   background-position: 50% 195%;
+  }
+
+  .label__main {
+    margin: initial;
+    text-align: center;
+    width: 100%;
+    margin-top: 307px;
+    align-items: center;
+  }
+
+  .title__main {
+    margin-bottom: 20px;
+  }
+
+  .button__header {
+    margin-top: 20px;
+  }
+
+  .description__main {
+    width: 85%;
+    margin: 0 auto;
+    line-height: 1.3;
+    font-size: 16px;
+    text-align: justify;
+    color: #7a7575;
+  }
+}
+
+
