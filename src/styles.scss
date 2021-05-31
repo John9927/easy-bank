@@ -1,3 +1,32 @@
+// Scroll
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    rgba(49, 211, 92, 1) 0%,
+    rgba(43, 183, 218, 1) 100%
+  )
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom,
+    rgb(56, 129, 76) 0%,
+    rgb(27, 79, 94) 87%
+  );
+}
+
 html {
   font-family: 'Public Sans', sans-serif;
 }

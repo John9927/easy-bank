@@ -121,7 +121,7 @@
 
 // Choose
 
-.master__item__choose {
+.master__item {
   display: flex;
   flex-direction: column;
   width: 86%;
@@ -145,7 +145,7 @@
   display: flex;
   flex-direction: column;
   height: 250px;
-  width: 200px;
+  width: 205px;
 }
 
 .container__choose__items {
@@ -189,6 +189,82 @@
   color: rgb(68, 65, 65);
 }
 
+// Articles
+.title__articles__container {
+  font-size: 47px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.--border {
+  background: hsl(0, 0%, 98%);
+}
+
+.items__articles {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 200px;
+}
+
+.image__articles {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.wrap__articles {
+  margin: 17px;
+}
+
+.autors__articles {
+  font-size: 11px;
+}
+
+.title__articles {
+  width: 95%;
+  margin: 10px 0px 10px 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: hsl(136, 65%, 51%);
+    cursor: pointer;
+  }
+}
+
+.description__articles {
+  width: 100%;
+  font-size: 14px;
+  color: rgb(70, 69, 69);
+}
+
+.--money {
+  background: url('./../../assets/images/image-currency.jpg') no-repeat;
+  background-size: cover;
+}
+
+.--treat {
+  background: url('./../../assets/images/image-restaurant.jpg') no-repeat;
+  background-size: cover;
+}
+
+.--plan {
+  background: url('./../../assets/images/image-plane.jpg') no-repeat;
+  background-size: cover;
+}
+
+.--beta {
+  background: url('./../../assets/images/image-confetti.jpg') no-repeat;
+  background-size: cover;
+}
 
 @media screen and (max-width: 1440px) {
   .image__phone {
@@ -290,7 +366,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 770px) {
   .label__main {
     margin-top: 315px;
   }
@@ -312,6 +388,10 @@
     height: 1330px;
   }
 
+  .mobile {
+    height: 1530px;
+  }
+
   .container__items__chose {
     flex-direction: column;
     align-items: center;
@@ -326,6 +406,17 @@
   .--fast,
   .--api {
     background-position: center
+  }
+
+  // Articles
+  .title__articles__container {
+    font-size: 30px;
+  }
+
+  .items__articles {
+    margin-bottom: 40px;
+    width: 95%;
+    text-align: left;
   }
 }
 
