@@ -11,10 +11,27 @@
       <a href="#" class="item">Careers</a>
     </div>
     <div class="hamburger">
-      <div class="image"></div>
+      <div *ngIf="this.menuService.closeMenu" style="display: flex;" (click)="onClickHamburger()">
+        <img src="./../../assets/images/icon-hamburger.svg">
+      </div>
+      <div *ngIf="!this.menuService.closeMenu" style="display: flex;" (click)="onClickClose()">
+        <img src="./../../assets/images/icon-close.svg">
+      </div>
     </div>
-      <button class="button__header">
-        <span class="span__header">Request Invite</span>
-      </button>
+    <button class="button__header">
+      <span class="span__header">Request Invite</span>
+    </button>
+  </div>
+</div>
+
+<div *ngIf="!this.menuService.closeMenu" class="menu__mobile__container">
+  <div class="menu__mobile">
+    <div style="margin: 19px; display: flex; flex-direction: column; align-items: center;">
+      <a href="#" class="item__mobile">Home</a>
+      <a href="#" class="item__mobile">About</a>
+      <a href="#" class="item__mobile">Contact</a>
+      <a href="#" class="item__mobile">Blog</a>
+      <a href="#" class="item__mobile">Careers</a>
+    </div>
   </div>
 </div>

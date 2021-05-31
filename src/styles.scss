@@ -12,6 +12,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
+  border-radius: 25px;
   background: linear-gradient(
     to bottom,
     rgba(49, 211, 92, 1) 0%,

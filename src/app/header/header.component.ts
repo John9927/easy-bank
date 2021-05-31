@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { MenuService } from './../services/menu.service';
+import { Component, EventEmitter, Input, OnInit, Output, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  constructor(private render: Renderer2, public menuService: MenuService ) { }
 
   ngOnInit(): void {
   }
 
+  onClickHamburger() {
+    this.menuService.closeMenu = false;
+  }
+
+  onClickClose() {
+    this.menuService.closeMenu = true;
+  }
 }
