@@ -1,7 +1,7 @@
 .container__main {
   display: flex;
   width: 100%;
-  height: 600px;
+  height: 650px;
 }
 
 .container__items {
@@ -13,7 +13,7 @@
 .label__main {
   display: flex;
   flex-direction: column;
-  margin: 109px -440px 0px 7%;
+  margin: 155px -440px 0px 10%;
   text-align: left;
   z-index: 1;
   width: 327px;
@@ -64,16 +64,12 @@
   display: flex;
   border-radius: 25px;
   height: 33px;
-  width: 110px;
+  width: 132px;
   align-items: center;
-  background: rgb(49, 211, 92);
-  background: linear-gradient(
-    90deg,
-    rgba(49, 211, 92, 1) 0%,
-    rgba(43, 183, 218, 1) 87%
-  );
+  justify-content: center;
+  background: linear-gradient(90deg, #31d35c 0%, #2bb7da 87%);
   border: 0;
-  padding: 15px;
+  padding: 20px;
   cursor: pointer;
 
   &:focus {
@@ -94,7 +90,7 @@
 .container__easy__bank {
   display: flex;
   width: 100%;
-  height: 550px;
+  height: 650px;
   background:  hsl(0, 0%, 98%);
 }
 
@@ -124,7 +120,7 @@
 .master__item {
   display: flex;
   flex-direction: column;
-  width: 86%;
+  width: 79%;
   margin: 75px auto;
 }
 
@@ -204,7 +200,7 @@
   display: flex;
   flex-direction: column;
   height: 300px;
-  width: 200px;
+  width: 250px;
 }
 
 .image__articles {

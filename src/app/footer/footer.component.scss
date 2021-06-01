@@ -7,7 +7,7 @@
 
 .container__footer {
   display: flex;
-  width: 86%;
+  width: 79%;
   margin: 55px auto;
   justify-content: space-between;
 }
@@ -72,12 +72,12 @@ a {
   display: flex;
   border-radius: 25px;
   height: 33px;
-  width: 120px;
+  width: 132px;
   align-items: center;
   justify-content: center;
   background: linear-gradient(90deg, #31d35c 0%, #2bb7da 87%);
   border: 0;
-  padding: 15px;
+  padding: 20px;
   cursor: pointer;
 
   &:focus {

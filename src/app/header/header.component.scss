@@ -7,7 +7,7 @@
 
 .container__items {
   display: flex;
-  width: 85%;
+  width: 79%;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -45,15 +45,12 @@
   display: flex;
   border-radius: 25px;
   height: 33px;
+  width: 132px;
   align-items: center;
-  background: rgb(49, 211, 92);
-  background: linear-gradient(
-    90deg,
-    rgba(49, 211, 92, 1) 0%,
-    rgba(43, 183, 218, 1) 87%
-  );
+  justify-content: center;
+  background: linear-gradient(90deg, #31d35c 0%, #2bb7da 87%);
   border: 0;
-  padding: 15px;
+  padding: 20px;
   cursor: pointer;
 
   &:focus {
@@ -100,7 +97,6 @@
   font-size: 18px;
   font-weight: bold;
 }
-
 
 @media screen and (max-width: 770px) {
   .menu__header {
